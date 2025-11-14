@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MinecraftToolkit"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:muxc="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
+        <muxc:NavigationView IsBackButtonVisible="Collapsed" IsSettingsVisible="False"    >
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Content="主页" Tag="Home">
+                    <muxc:NavigationViewItem.Icon>
+                        <ui:PathIcon Data="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+                    </muxc:NavigationViewItem.Icon>
+                </muxc:NavigationViewItem>
+                
+                
+            </muxc:NavigationView.MenuItems>
 
+            <ui:Frame NavigationUIVisibility="Hidden"/>
+        </muxc:NavigationView>
     </Grid>
 </Window>

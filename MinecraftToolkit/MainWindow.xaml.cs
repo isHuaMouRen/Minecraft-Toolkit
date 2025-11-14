@@ -1,4 +1,5 @@
 ﻿using MinecraftToolkit.Pages;
+using MinecraftToolkit.Utils;
 using ModernWpf.Controls;
 using ModernWpf.Media.Animation;
 using System.Text;
@@ -47,7 +48,7 @@ namespace MinecraftToolkit
             }
             catch (Exception ex)
             {
-
+                ErrorReportDialog.Show("发生错误", $"初始化 {this.Name} 发生错误", ex);
             }
         }
         #endregion
@@ -73,7 +74,7 @@ namespace MinecraftToolkit
             }
             catch (Exception ex)
             {
-                logger.Error("fas fasasfdfasdfasdfasfas");
+                ErrorReportDialog.Show("发生错误", "处理选择事件时发生错误", ex);
             }
         }
     }

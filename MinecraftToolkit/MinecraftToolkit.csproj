@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="HuaZi.Library" Version="2025.11.7.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>

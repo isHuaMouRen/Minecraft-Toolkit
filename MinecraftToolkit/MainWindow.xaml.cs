@@ -23,7 +23,7 @@ namespace MinecraftToolkit
     {
         #region Obj
         private Dictionary<string, Type> PageMap = new Dictionary<string, Type>();//预加载Pages
-        private DrillInNavigationTransitionInfo FrameAnimation = new DrillInNavigationTransitionInfo();
+        private DrillInNavigationTransitionInfo FrameAnimation = new DrillInNavigationTransitionInfo();//frame切换动画
         #endregion
 
         #region Func

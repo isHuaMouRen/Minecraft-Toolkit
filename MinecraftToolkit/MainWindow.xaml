@@ -7,7 +7,7 @@
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:muxc="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ui:WindowHelper.UseModernWindowStyle="True">
+        Title="Minecraft Toolkit" Height="450" Width="800" ui:WindowHelper.UseModernWindowStyle="True">
     <Grid>
         <muxc:NavigationView x:Name="navView" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" SelectionChanged="navView_SelectionChanged">
             <muxc:NavigationView.MenuItems>
